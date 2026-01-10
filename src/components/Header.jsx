@@ -49,11 +49,7 @@ const Header = () => {
           {/* Logo */}
           <div>
             <Link to="/">
-              <img
-                src={logo}
-                alt="logo"
-                className="w-16 h-16 sm:w-20 sm:h-20 rounded-full"
-              />
+              <img src={logo} alt="logo" className="w-16 h-16  rounded-full" />
             </Link>
           </div>
 
@@ -61,7 +57,7 @@ const Header = () => {
           <div className="hidden md:flex items-center space-x-8">
             <Link
               to="/"
-              className="text-lg hover:text-light_primary font-semibold"
+              className="text-medium font-semibold hover:text-light_primary "
             >
               Home
             </Link>
@@ -82,7 +78,7 @@ const Header = () => {
                 onClick={() =>
                   setDropdownOpen(dropdownOpen === "company" ? null : "company")
                 }
-                className="flex items-center text-lg font-semibold group hover:text-light_primary focus:outline-none"
+                className="flex items-center text-medium font-semibold  group hover:text-light_primary focus:outline-none"
               >
                 Company{" "}
                 <ChevronDown
@@ -92,7 +88,7 @@ const Header = () => {
               </button>
 
               <div
-                className={`absolute left-0 top-full mt-8 w-48 bg-white shadow-lg rounded-b-lg overflow-hidden z-50 transform transition-all duration-150 ${
+                className={`absolute left-0 top-full mt-7 w-48 bg-white shadow-lg rounded-b-lg overflow-hidden z-50 transform transition-all duration-150 ${
                   dropdownOpen === "company"
                     ? "opacity-100 pointer-events-auto scale-100"
                     : "opacity-0 pointer-events-none scale-95"
@@ -134,7 +130,7 @@ const Header = () => {
                     dropdownOpen === "services" ? null : "services"
                   )
                 }
-                className="flex items-center text-lg font-semibold group hover:text-light_primary focus:outline-none"
+                className="flex items-center text-medium font-semibold  group hover:text-light_primary focus:outline-none"
               >
                 Services{" "}
                 <ChevronDown
@@ -144,7 +140,7 @@ const Header = () => {
               </button>
 
               <div
-                className={`absolute left-0 top-full mt-8 w-64 bg-white shadow-lg rounded-b-lg overflow-hidden z-50 transform transition-all duration-150 ${
+                className={`absolute left-0 top-full mt-7 w-64 bg-white shadow-lg rounded-b-lg overflow-hidden z-50 transform transition-all duration-150 ${
                   dropdownOpen === "services"
                     ? "opacity-100 pointer-events-auto scale-100"
                     : "opacity-0 pointer-events-none scale-95"
@@ -184,13 +180,13 @@ const Header = () => {
 
             <Link
               to="/contact"
-              className="text-lg hover:text-light_primary font-semibold"
+              className="text-medium font-semibold hover:text-light_primary "
             >
               Contact
             </Link>
             <Link
               to="/book-consultation"
-              className="text-lg hover:text-light_primary font-semibold"
+              className="text-medium font-semibold hover:text-light_primary "
             >
               Book A Consultation
             </Link>
